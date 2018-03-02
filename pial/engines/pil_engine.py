@@ -1,4 +1,4 @@
-from cStringIO import StringIO
+from io import StringIO
 from pial.engines.base import EngineBase
 
 try:

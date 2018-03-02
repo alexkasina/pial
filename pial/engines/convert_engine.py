@@ -23,7 +23,7 @@ class ConvertEngine(EngineBase):
         """
         handle, out = mkstemp(suffix='.%s' % EXTENSIONS[options['format']])
         args = [settings.THUMBNAIL_CONVERT, image['source']]
-        for k, v in image['options'].iteritems():
+        for k, v in image['options'].items():
             args.append('-%s' % k)
             if v is not None:
                 args.append('%s' % v)
