@@ -116,7 +116,7 @@ class EngineBase(object):
             are 'JPEG', 'GIF', 'PNG'. Other formats largely depend on your
             choice of Engine.
         """
-        if isinstance(format, basestring) and format.lower() == 'jpg':
+        if isinstance(format, str) and format.lower() == 'jpg':
             # This mistake is made all the time. Let's just effectively alias
             # this, since it's commonly used.
             format = 'JPEG'
